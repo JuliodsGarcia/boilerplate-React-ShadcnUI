@@ -1,9 +1,13 @@
-export default function App() {
+import { BrowserRouter } from "react-router-dom";
+
+import AppRoutes from "./routes";
+
+function App() {
   return (
-    <>
-      <div>
-        <h1>Vite + React</h1>
-      </div>
-    </>
+    <BrowserRouter>
+      <AppRoutes />
+    </BrowserRouter>
   );
 }
+
+export default App;
